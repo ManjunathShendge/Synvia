@@ -1,10 +1,13 @@
 export default function Head() {
   return (
     <>
-      <title> Solid | Next.js Template for Startup and SaaS</title>
+      <title>Synvia | Website Development & Digital Marketing Agency</title>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
-      <meta name="description" content="Built with Next.js and TypeScript" />
-      <link rel="icon" href="/images/favicon.ico" />
+      <meta
+        name="description"
+        content="We build powerful websites and deliver result-driven digital marketing solutions to help businesses grow their online presence and achieve measurable success."
+      />
+      <link rel="icon" href="/images/logo-dark.png" />
     </>
   );
 }
