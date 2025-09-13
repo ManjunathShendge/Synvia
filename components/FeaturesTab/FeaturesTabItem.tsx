@@ -1,0 +1,37 @@
+import React from "react";
+import { FeatureTab } from "@/types/featureTab";
+import Image from "next/image";
+
+const FeaturesTabItem = ({ featureTab }: { featureTab: FeatureTab }) => {
+  const { title, desc1, desc2, image, imageDark } = featureTab;
+
+  return (
+    <>
+      <div className="flex items-center gap-8 lg:gap-19">
+        <div className="md:w-1/2">
+          <h2 className="xl:text-sectiontitle2 mb-7 text-3xl font-bold text-black dark:text-white">
+            {title}
+          </h2>
+          <p className="mb-5">{desc1}</p>
+          <p className="w-11/12">{desc2}</p>
+        </div>
+        <div className="relative mx-auto hidden aspect-[562/366] max-w-[550px] overflow-hidden rounded-lg shadow-lg transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl md:block md:w-1/2">
+          <Image
+            src={image}
+            alt={title}
+            fill
+            className="object-cover dark:hidden"
+          />
+          <Image
+            src={imageDark}
+            alt={title}
+            fill
+            className="hidden object-cover dark:block"
+          />
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default FeaturesTabItem;
