@@ -75,7 +75,7 @@ const Footer = () => {
                   href="#"
                   className="text-itemtitle font-medium text-black dark:text-white"
                 >
-                  hello@solid.com
+                  info@syniaa.com
                 </a>
               </motion.div>
 
