@@ -37,7 +37,7 @@ const Contact = () => {
             />
           </div>
 
-          <div className="flex flex-col-reverse flex-wrap gap-8 md:flex-row md:flex-nowrap md:justify-between xl:gap-20">
+          <div id="contactus" className="flex flex-col-reverse flex-wrap gap-8 md:flex-row md:flex-nowrap md:justify-between xl:gap-20">
             <motion.div
               variants={{
                 hidden: {
@@ -192,7 +192,8 @@ const Contact = () => {
                   Email Address
                 </h3>
                 <p>
-                  <a href="#">info@synvia.com</a>
+                  <a href="#">manjunathshendge749@gmail.com
+</a>
                 </p>
               </div>
               <div>
