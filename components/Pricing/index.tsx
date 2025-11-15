@@ -6,8 +6,8 @@ const Pricing = () => {
   return (
     <>
       {/* <!-- ===== Pricing Table Start ===== --> */}
-      <section className="overflow-hidden pb-20 pt-15 lg:pb-25 xl:pb-30">
-        <div className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
+      <section className="overflow-hidden pt-15 pb-20 lg:pb-25 xl:pb-30">
+        <div className="max-w-c-1315 mx-auto px-4 md:px-8 xl:px-0">
           {/* <!-- Section Title Start --> */}
           <div className="animate_top mx-auto text-center">
             <SectionHeader
@@ -32,160 +32,195 @@ const Pricing = () => {
           </div>
           <div className="flex flex-wrap justify-center gap-7.5 lg:flex-nowrap xl:gap-12.5">
             {/* <!-- Pricing Item --> */}
-            <div className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5">
-              <h3 className="mb-7.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-                $29{" "}
-                <span className="text-regular text-waterloo dark:text-manatee">
-                  /month
-                </span>
-              </h3>
-              <h4 className="mb-2.5 text-para2 font-medium text-black dark:text-white">
-                Starter Plan
-              </h4>
-              <p>Perfect for startups launching their first website and marketing campaigns.</p>
+            <div className="animate_top group relative rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 p-[2px] md:w-[45%] lg:w-1/3 xl:p-[2px]">
+              {/* Inner Card (unchanged background) */}
+              <div className="dark:bg-blacksection border-stroke dark:border-strokedark shadow-solid-10 rounded-lg border bg-white p-7.5 xl:p-12.5">
+                <h3 className="xl:text-sectiontitle3 mb-7.5 text-3xl font-bold text-black dark:text-white">
+                  $29{" "}
+                  <span className="text-regular text-waterloo dark:text-manatee">
+                    /month
+                  </span>
+                </h3>
 
-              <div className="mt-9 border-t border-stroke pb-12.5 pt-9 dark:border-strokedark">
-                <ul>
-                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Custom Responsive Website
-                  </li>
-                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Basic SEO Setup
-                  </li>
-                  <li className="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">
-                    Email Marketing Integration
-                  </li>
-                  <li className="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">
-                    Monthly Performance Report
-                  </li>
-                </ul>
-              </div>
+                <h4 className="text-para2 mb-2.5 font-medium text-black dark:text-white">
+                  Starter Plan
+                </h4>
 
-              <button
-                aria-label="Get the Plan button"
-                className="group/btn inline-flex items-center gap-2.5 font-medium text-primary transition-all duration-300 dark:text-white dark:hover:text-primary"
-              >
-                <span className="duration-300 group-hover/btn:pr-2">
-                  Get the Plan
-                </span>
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 14 14"
-                  xmlns="http://www.w3.org/2000/svg"
+                <p>
+                  Perfect for startups launching their first website and
+                  marketing campaigns.
+                </p>
+
+                <div className="border-stroke dark:border-strokedark mt-9 border-t pt-9 pb-12.5">
+                  <ul>
+                    <li className="dark:text-manatee mb-4 text-black last:mb-0">
+                      Custom Responsive Website
+                    </li>
+                    <li className="dark:text-manatee mb-4 text-black last:mb-0">
+                      Basic SEO Setup
+                    </li>
+                    <li className="dark:text-manatee mb-4 text-black opacity-40 last:mb-0">
+                      Email Marketing Integration
+                    </li>
+                    <li className="dark:text-manatee mb-4 text-black opacity-40 last:mb-0">
+                      Monthly Performance Report
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Animated Button */}
+                <button
+                  aria-label="Get the Plan button"
+                  className="group/btn text-primary dark:hover:text-primary inline-flex items-center gap-2.5 font-medium transition-all duration-300 dark:text-white"
                 >
-                  <path
-                    d="M10.4767 6.16701L6.00668 1.69701L7.18501 0.518677L13.6667 7.00034L7.18501 13.482L6.00668 12.3037L10.4767 7.83368H0.333344V6.16701H10.4767Z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </button>
+                  <span className="duration-300 group-hover/btn:pr-2">
+                    Get the Plan
+                  </span>
+
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="transition-transform duration-300 group-hover/btn:translate-x-1"
+                  >
+                    <path
+                      d="M10.4767 6.16701L6.00668 1.69701L7.18501 0.518677L13.6667 7.00034L7.18501 13.482L6.00668 12.3037L10.4767 7.83368H0.333344V6.16701H10.4767Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
 
             {/* <!-- Pricing Item --> */}
-            <div className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5">
-              <div className="absolute -right-3.5 top-7.5 -rotate-90 rounded-bl-full rounded-tl-full bg-primary px-4.5 py-1.5 text-metatitle font-medium uppercase text-white">
-                Popular
-              </div>
+            <div className="animate_top group relative rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 p-[2px] md:w-[45%] lg:w-1/3 xl:p-[2px]">
+              {/* Inner card – same as before */}
+              <div className="border-stroke shadow-solid-10 dark:border-strokedark dark:bg-blacksection rounded-lg border bg-white p-7.5 xl:p-12.5 dark:shadow-none">
+                {/* Popular Tag */}
+                <div className="bg-primary text-metatitle absolute top-7.5 -right-3.5 -rotate-90 rounded-tl-full rounded-bl-full px-4.5 py-1.5 font-medium text-white uppercase">
+                  Popular
+                </div>
 
-              <h3 className="mb-7.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-                $79{" "}
-                <span className="text-regular text-waterloo dark:text-manatee">
-                  /month
-                </span>
-              </h3>
-              <h4 className="mb-2.5 text-para2 font-medium text-black dark:text-white">
-                Growth Plan
-              </h4>
-              <p>Designed for growing businesses looking to expand their digital footprint.</p>
+                <h3 className="xl:text-sectiontitle3 mb-7.5 text-3xl font-bold text-black dark:text-white">
+                  $79{" "}
+                  <span className="text-regular text-waterloo dark:text-manatee">
+                    /month
+                  </span>
+                </h3>
 
-              <div className="mt-9 border-t border-stroke pb-12.5 pt-9 dark:border-strokedark">
-                <ul>
-                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Advanced Website Features
-                  </li>
-                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Full SEO & Content Marketing
-                  </li>
-                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Social Media Management
-                  </li>
-                  <li className="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">
-                    Monthly Analytics & Insights
-                  </li>
-                </ul>
-              </div>
+                <h4 className="text-para2 mb-2.5 font-medium text-black dark:text-white">
+                  Growth Plan
+                </h4>
 
-              <button
-                aria-label="Get the Plan button"
-                className="group/btn inline-flex items-center gap-2.5 font-medium text-primary transition-all duration-300 dark:text-white dark:hover:text-primary"
-              >
-                <span className="duration-300 group-hover/btn:pr-2">
-                  Get the Plan
-                </span>
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 14 14"
-                  xmlns="http://www.w3.org/2000/svg"
+                <p>
+                  Designed for growing businesses looking to expand their
+                  digital footprint.
+                </p>
+
+                <div className="border-stroke dark:border-strokedark mt-9 border-t pt-9 pb-12.5">
+                  <ul>
+                    <li className="dark:text-manatee mb-4 text-black last:mb-0">
+                      Advanced Website Features
+                    </li>
+                    <li className="dark:text-manatee mb-4 text-black last:mb-0">
+                      Full SEO & Content Marketing
+                    </li>
+                    <li className="dark:text-manatee mb-4 text-black last:mb-0">
+                      Social Media Management
+                    </li>
+                    <li className="dark:text-manatee mb-4 text-black opacity-40 last:mb-0">
+                      Monthly Analytics & Insights
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Animated Button */}
+                <button
+                  aria-label="Get the Plan button"
+                  className="group/btn text-primary dark:hover:text-primary inline-flex items-center gap-2.5 font-medium transition-all duration-300 dark:text-white"
                 >
-                  <path
-                    d="M10.4767 6.16701L6.00668 1.69701L7.18501 0.518677L13.6667 7.00034L7.18501 13.482L6.00668 12.3037L10.4767 7.83368H0.333344V6.16701H10.4767Z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </button>
+                  <span className="duration-300 group-hover/btn:pr-2">
+                    Get the Plan
+                  </span>
+
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="transition-transform duration-300 group-hover/btn:translate-x-1"
+                  >
+                    <path
+                      d="M10.4767 6.16701L6.00668 1.69701L7.18501 0.518677L13.6667 7.00034L7.18501 13.482L6.00668 12.3037L10.4767 7.83368H0.333344V6.16701H10.4767Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
 
             {/* <!-- Pricing Item --> */}
-            <div className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5">
-              <h3 className="mb-7.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-                $199{" "}
-                <span className="text-regular text-waterloo dark:text-manatee">
-                  /month
-                </span>
-              </h3>
-              <h4 className="mb-2.5 text-para2 font-medium text-black dark:text-white">
-                Enterprise Plan
-              </h4>
-              <p>Comprehensive solutions for large enterprises with custom requirements.</p>
+            {/* Pricing Item */}
+            <div className="animate_top group relative rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 p-[2px] md:w-[45%] lg:w-1/3 xl:p-[2px]">
+              {/* Inner Card (unchanged background) */}
+              <div className="dark:bg-blacksection border-stroke dark:border-strokedark shadow-solid-10 rounded-lg border bg-white p-7.5 xl:p-12.5">
+                <h3 className="xl:text-sectiontitle3 mb-7.5 text-3xl font-bold text-black dark:text-white">
+                  $29{" "}
+                  <span className="text-regular text-waterloo dark:text-manatee">
+                    /month
+                  </span>
+                </h3>
 
-              <div className="mt-9 border-t border-stroke pb-12.5 pt-9 dark:border-strokedark">
-                <ul>
-                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Fully Customized Website & Apps
-                  </li>
-                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Dedicated SEO & Marketing Team
-                  </li>
-                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    AI-Powered Automation & Analytics
-                  </li>
-                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Priority 24/7 Support
-                  </li>
-                </ul>
-              </div>
+                <h4 className="text-para2 mb-2.5 font-medium text-black dark:text-white">
+                  Starter Plan
+                </h4>
 
-              <button
-                aria-label="Get the Plan button"
-                className="group/btn inline-flex items-center gap-2.5 font-medium text-primary transition-all duration-300 dark:text-white dark:hover:text-primary"
-              >
-                <span className="duration-300 group-hover/btn:pr-2">
-                  Get the Plan
-                </span>
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 14 14"
-                  xmlns="http://www.w3.org/2000/svg"
+                <p>
+                  Perfect for startups launching their first website and
+                  marketing campaigns.
+                </p>
+
+                <div className="border-stroke dark:border-strokedark mt-9 border-t pt-9 pb-12.5">
+                  <ul>
+                    <li className="dark:text-manatee mb-4 text-black last:mb-0">
+                      Custom Responsive Website
+                    </li>
+                    <li className="dark:text-manatee mb-4 text-black last:mb-0">
+                      Basic SEO Setup
+                    </li>
+                    <li className="dark:text-manatee mb-4 text-black opacity-40 last:mb-0">
+                      Email Marketing Integration
+                    </li>
+                    <li className="dark:text-manatee mb-4 text-black opacity-40 last:mb-0">
+                      Monthly Performance Report
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Animated Button */}
+                <button
+                  aria-label="Get the Plan button"
+                  className="group/btn text-primary dark:hover:text-primary inline-flex items-center gap-2.5 font-medium transition-all duration-300 dark:text-white"
                 >
-                  <path
-                    d="M10.4767 6.16701L6.00668 1.69701L7.18501 0.518677L13.6667 7.00034L7.18501 13.482L6.00668 12.3037L10.4767 7.83368H0.333344V6.16701H10.4767Z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </button>
+                  <span className="duration-300 group-hover/btn:pr-2">
+                    Get the Plan
+                  </span>
+
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="transition-transform duration-300 group-hover/btn:translate-x-1"
+                  >
+                    <path
+                      d="M10.4767 6.16701L6.00668 1.69701L7.18501 0.518677L13.6667 7.00034L7.18501 13.482L6.00668 12.3037L10.4767 7.83368H0.333344V6.16701H10.4767Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
