@@ -1,8 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+
 
 const Hero = () => {
   const [email, setEmail] = useState("");
@@ -32,7 +33,7 @@ const Hero = () => {
 
           <div className="flex lg:items-center lg:gap-10 xl:gap-32">
 
-            {/* LEFT CONTENT ANIMATED */}
+            {/* LEFT CONTENT */}
             <motion.div
               variants={container}
               initial="hidden"
@@ -71,7 +72,7 @@ const Hero = () => {
                 </motion.span>
               </motion.h1>
 
-              {/* Subtitle with underline animation */}
+              {/* Subtitle */}
               <motion.h2
                 variants={fadeUp}
                 className="
@@ -139,27 +140,26 @@ const Hero = () => {
               </motion.div>
             </motion.div>
 
-            {/* RIGHT SIDE IMAGE WITH ANIMATIONS */}
+            {/* RIGHT SIDE LOTTIE ANIMATION */}
+            {/* RIGHT LOTTIE (ANIMATION) */}
             <motion.div
-              initial={{ opacity: 0, x: 80 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.9 }}
-              className="hidden md:w-1/2 lg:block"
+              variants={{
+                hidden: { opacity: 0, x: 20 },
+                visible: { opacity: 1, x: 0 },
+              }}
+              initial="hidden"
+              whileInView="visible"
+              transition={{ duration: 0.5, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="animate_right relative mx-auto hidden aspect-[588/526.5] md:block md:w-1/2"
             >
-              <div className="relative w-full aspect-700/444">
-                <Image
-                  src="/images/hero/Herosection-image.jpg"
-                  alt="Hero"
-                  fill
-                  className="
-                    object-cover rounded-3xl
-                    drop-shadow-[0_25px_40px_rgba(0,0,0,0.25)]
-                    dark:drop-shadow-[0_25px_40px_rgba(255,255,255,0.08)]
-                  "
-                />
-              </div>
+              <DotLottieReact
+                src="https://lottie.host/bd7c26a9-13eb-4d6a-bba1-b4a3c501b73a/HrIakUSYqe.lottie"
+                loop
+                autoplay
+                className="h-full w-full"
+              />
             </motion.div>
-
           </div>
         </div>
 

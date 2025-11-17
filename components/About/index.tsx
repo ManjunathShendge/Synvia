@@ -22,11 +22,11 @@ const About = () => {
               viewport={{ once: true }}
               className="animate_left md:w-1/2"
             >
-              <span className="font-medium text-black uppercase dark:text-white">
+              
                 <span className="mr-4 pb-4 inline-block bg-gradient-to-r from-[#0062ff] to-[#7600e4] bg-clip-text text-4xl text-transparent uppercase">
-                  Verified US Business Data
+                  Verified Business Data - USA and Canada
                 </span>
-              </span>
+             
 
               <h2 className="xl:text-hero relative mb-6 text-4xl font-bold text-black dark:text-white">
                 High-Quality Leads That Actually Convert
@@ -69,8 +69,8 @@ const About = () => {
                     Target Any Industry or Audience
                   </h3>
                   <p>
-                    Get precise, segmented datasets for B2B, B2C, healthcare,
-                    real estate, tech, finance, and more.
+                    Get precise segmented datasets for B2B like healthcare,
+                    real estate, tech, finance, and more industries.
                   </p>
                 </div>
               </div>

@@ -57,9 +57,10 @@ const FunFact = () => {
               Trusted by Ambition & Innovation
             </h2>
             <p className="mx-auto lg:w-11/12">
-              At SYNVIA, we’re passionate about helping businesses grow through
-              cutting-edge digital marketing and web development solutions.
-              We’re ready to partner with you to build your success story.
+              At SYNIAA, we’re passionate about helping businesses grow through
+              cutting-edge B2B outreach strategies, Digital marketing and
+              high-performance Web development solutions. We’re ready to partner
+              with you to build your success story.
             </p>
           </motion.div>
           <div className="mx-auto max-w-3xl rounded-xl bg-white p-12 text-center shadow-xl dark:bg-gray-800">

@@ -32,7 +32,10 @@ const CTA = () => {
                 Join Us Today & Boost Your Productivity
               </h2>
               <p>
-                Unlock your business’s full potential with our expert digital marketing and web development solutions. Streamline your processes, engage your audience, and accelerate growth like never before.
+                Supercharge your growth with targeted B2B email marketing and
+                100% verified business data. We help you connect with real
+                decision-makers, improve outreach performance, and close more
+                deals through accurate, ready-to-use data.
               </p>
             </motion.div>
             <motion.div

@@ -18,9 +18,9 @@ const featuresData: Feature[] = [
   {
     id: 3,
     icon: "/images/icon/icon-03.svg",
-    title: "Social Media Marketing",
+    title: "Email Campaign Services",
     description:
-      "Engage and grow your audience on all platforms.",
+      "Create high-performing email campaigns with targeted messaging, automation, and real-time analytics.",
   },
   {
     id: 4,
@@ -39,30 +39,9 @@ const featuresData: Feature[] = [
   {
     id: 6,
     icon: "/images/icon/icon-06.svg",
-    title: "AI-Enhanced Personalization",
-    description:
-      "Deliver tailored experiences and recommendations to each user.",
-  },{
-    id: 4,
-    icon: "/images/icon/icon-04.svg",
-    title: "Marketing Automation",
-    description:
-      "Automate campaigns and personalize customer journeys with AI.",
-  },
-  {
-    id: 5,
-    icon: "/images/icon/icon-05.svg",
-    title: "Predictive Analytics",
-    description:
-      "Data-driven insights to forecast trends and boost ROI.",
-  },
-  {
-    id: 6,
-    icon: "/images/icon/icon-06.svg",
-    title: "Voice Search Optimization",
-    description:
-      "Optimize content for voice assistants like Alexa, Siri, and Google Assistant.",
-  },
+    title: "B2B Contact Data",
+   description: "Access verified business contacts with accurate emails, direct dials, and company details to power your B2B outreach."
+  },  
 ];
 
 export default featuresData;
